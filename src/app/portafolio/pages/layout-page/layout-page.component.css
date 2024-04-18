@@ -1,0 +1,12 @@
+.layout-toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.github-button{
+  line-height: normal;
+}
+
+.github-icon{
+  margin-right: 0;
+  margin-left: 0;
+}

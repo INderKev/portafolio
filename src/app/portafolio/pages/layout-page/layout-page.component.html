@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  <span>Portafolio</span>
+  <span class="layout-toolbar-spacer"></span>
+  <button mat-button
+    *ngFor="let item of toolbarItems"
+    [routerLink]="item.url">
+
+    {{ item.label }}
+  </button>
+  <button mat-icon-button >
+    <mat-icon svgIcon="github" ></mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="container">
+
+  <router-outlet></router-outlet>
+</div>
+
+
+
