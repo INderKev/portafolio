@@ -21,9 +21,8 @@ export class IconModule {
     public matIconRegistry: MatIconRegistry,
   ){
     this.matIconRegistry
-    .addSvgIcon("github2", this.setPath(`${this.path}/github.svg`))
-    .addSvgIcon("github", this.setPath(`${this.path}/github-mark-white.svg`));
-
+    .addSvgIcon("github", this.setPath(`${this.path}/github.svg`))
+    .addSvgIcon("linkedin", this.setPath(`${this.path}/linkedin-icon.svg`));
   }
 
   private setPath( url:string ): SafeResourceUrl {

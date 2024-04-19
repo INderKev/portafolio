@@ -7,12 +7,18 @@ import { Component } from '@angular/core';
 })
 export class LayoutPageComponent {
 
+  public linkeinUrl: string = "https://www.linkedin.com/in/kevin-culma-culma";
+  public githubUrl: string = "https://github.com/INderKev";
+
   public toolbarItems = [
     {label: 'about', icon: '?', url: './about'},
     {label: 'skills', icon: '?', url: './skills'},
     {label: 'projects', icon: '?', url: './projects'},
-    {label: 'blog', icon: '?', url: './blog'},
-    {label: 'contac me', icon: '?', url: './contac'},
+    {label: 'contac', icon: '?', url: './contac'},
   ]
+
+  public goGithub (): void{
+
+  }
 
 }

@@ -1,19 +1,25 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" >
+  <span class="toolbar-span"></span>
   <span>Portafolio</span>
   <span class="layout-toolbar-spacer"></span>
   <button mat-button
     *ngFor="let item of toolbarItems"
     [routerLink]="item.url">
-
     {{ item.label }}
   </button>
-  <button mat-icon-button >
-    <mat-icon svgIcon="github" ></mat-icon>
-  </button>
+  <a [href]="githubUrl" >
+    <button mat-icon-button color="warn" >
+      <mat-icon svgIcon="github" ></mat-icon>
+    </button>
+  </a>
+  <a [href]="linkeinUrl">
+    <button mat-icon-button color="warn" >
+      <mat-icon svgIcon="linkedin"></mat-icon>
+    </button>
+  </a>
 </mat-toolbar>
 
 <div class="container">
-
   <router-outlet></router-outlet>
 </div>
 
